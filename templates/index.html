@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MCQ Generator</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <img src="static/css/test.png" alt="Logo" id="logo">
+
+        <h1>
+
+            MCQify
+        </h1>
+    </header>
+    <div class="container">
+        <form id="mcqForm" enctype="multipart/form-data">
+
+            <select name="input_type" id="input_type">
+                <option value="na">Select input type</option>
+                <option value="text">Text</option>
+                <option value="url">URL</option>
+                <option value="file">File (Document or Image or AUDIO mp3) </option>
+                <option value="youtube">YouTube URL</option>
+
+            </select>
+
+            <select name="num_mcqs" id="num_mcqs">
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+            </select>
+            <input type="file" name="file" id="fileInput" style="display: none;">
+            <span id="supportedFormats" style="display: none;">Supported formats: jpeg, txt, pdf, docx, csv, html, mp3</span>
+
+            <textarea name="text" id="textInput" style="display: none;"></textarea>
+            <input type="url" name="url" id="urlInput" style="display: none;">
+            <input type="url" name="youtube" id="youtube" style="display: none;">
+
+
+            <button type="submit" class="button-32" role="button" >Generate MCQs</button>
+            <div id="errorMessage" style="display:none; color: red;"></div>
+        <button id="tryDifferentTopic" style="display:none;""  class = "button-32 button-33">Try Different Topic</button>
+
+
+        </form>
+
+        <div id="mcqDisplay"></div>
+    </div>
+    <div class="loader" id="loader" style="display:none;">
+        <div class="spinner"></div>
+        <p>Please wait...</p>
+
+    <script type='text/javascript' src="/static/js/script.js"></script>
+</body>
+</html>

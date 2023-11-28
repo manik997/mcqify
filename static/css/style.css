@@ -1,0 +1,266 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+header {
+    text-align: center; /* Center the content */
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3em;
+    display: inline; /* To wrap the background around the text */
+    background-image: linear-gradient(gold, gold);
+    background-size: 100% 10px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: background-size .7s, background-position .5s ease-in-out;
+    padding: 10px;
+    
+
+}
+
+h1:hover {
+    background-size: 100% 100%;
+    background-position: center bottom;
+    transition: background-position .7s, background-size .5s ease-in-out;
+}
+
+
+
+#logo {
+    height: 80px; /* Adjust based on your preference */
+    width: auto; /* Maintain the aspect ratio */
+    vertical-align: middle; /* Align with the middle of the text */
+    margin-right: 10px; /* Space between the logo and the text */
+}
+
+body, html {
+height: 100%;
+margin: 0;
+font-family: 'Ubuntu', sans-serif;
+background-color: #FBF0B2;
+}
+
+
+
+.container {
+width: 100%; /* Use 100% of the viewport width */
+max-width: 1200px; /* Max width for large screens */
+margin: 0 auto; /* Center the container */
+padding: 20px; /* Add some padding */
+
+align-items: center;
+
+
+border-radius: 10px;
+/* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+margin: 40px auto;
+padding: 20px;
+max-width: 800px;
+
+
+}
+
+#mcqForm > select,
+#mcqForm > button {
+    width: 80%; /* Increase the percentage as needed */
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+
+.mcq {
+/* Ensure that each MCQ block scales with the container */
+width: 100%; /* Use 100% of the container width */
+box-sizing: border-box; /* Include padding and border in the element's width */
+margin-bottom: 20px; /* Add space between MCQ blocks */
+}
+
+@media (max-width: 768px) {
+.mcq {
+padding: 10px; /* Less padding on small screens */
+}
+}
+
+input[type=file]::file-selector-button {
+margin-right: 20px;
+border: none;
+background: #084cdf;
+padding: 10px 20px;
+border-radius: 10px;
+color: #fff;
+cursor: pointer;
+transition: background .2s ease-in-out;
+}
+
+#input_type{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#num_mcqs{
+    text-align: center;
+}
+
+
+input[type=file]::file-selector-button:hover {
+background: #0d45a5;
+}
+
+select, input[type="file"], input[type="url"], textarea, button {
+width: 100%;
+padding: 10px;
+margin: 10px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+textarea{
+height: 200px;
+}
+
+textarea, input[type="file"], input[type="url"], button {
+    display: block; /* Change to block-level if not already */
+    width: 80%; /* Adjust width as needed */
+    margin: 10px auto; /* Auto margins for horizontal centering */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Remove text-align and align-items if they are set elsewhere */
+}
+
+
+input{
+    align-items: center;
+    text-align: center;
+}
+
+button {
+background-color: #4CAF50;
+color: white;
+border: none;
+cursor: pointer;
+align-items: center;
+}
+
+button:hover {
+background-color: #45a049;
+}
+
+
+
+
+/* CSS */
+.button-32 {
+  background-color: gold;
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-32:not(:disabled):hover,
+.button-32:not(:disabled):focus {
+  outline: 0;
+  background: #f4e603;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+
+.button-32:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}
+
+
+#supportedFormats {
+margin-top: 5px;
+font-size: 0.9em;
+color: #555;
+}
+
+#loading {
+display: none;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+font-size: 20px;
+color: #333;
+}
+
+.overlay {
+display: none;
+position: fixed;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0,0,0,0.5);
+z-index: 2;
+cursor: pointer;
+}
+
+
+.loader {
+text-align: center;
+padding: 20px;
+display: none; /* Hidden by default */
+}
+
+.spinner {
+border: 5px solid #f3f3f3; /* Light grey */
+border-top: 5px solid #3498db; /* Blue */
+border-radius: 50%;
+width: 50px;
+height: 50px;
+animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+
+/* Additional styling for the "Please wait..." text if needed */
+.loader p {
+color: #666;
+margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+.button-33 {
+    width: 50%;
+    padding: 7px 20px;
+  }
+  

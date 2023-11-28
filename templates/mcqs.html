@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generated MCQs</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Generated MCQs</h1>
+        {% if mcqs %}
+            <div id="mcqDisplay">
+                {% for mcq in mcqs %}
+                    <div class="mcq">
+                        <h3>{{ loop.index }}. {{ mcq['question_label'] }}</h3>
+                        <ul>
+                            <li>A: {{ mcq['A'] }}</li>
+                            <li>B: {{ mcq['B'] }}</li>
+                            <li>C: {{ mcq['C'] }}</li>
+                            <li>D: {{ mcq['D'] }}</li>
+                        </ul>
+                        <p><b>Answer:</b> {{ mcq['Answer'] }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>No MCQs available.</p>
+        {% endif %}
+    </div>
+    <script type='text/javascript' src="/static/js/script.js"></script>
+
+</body>
+</html>
