@@ -69,7 +69,7 @@ def generate_mcqs():
                     mcqs = mcqs_from_text(text, num_mcqs)
                 elif file_type == 'mp3':
                     print("called audio function")
-                    text = mcqs_from_audio(saved_path,num_mcqs)
+                    text = mcqs_from_audio(saved_path)
                     mcqs = mcqs_from_text(text,num_mcqs)
 
         elif input_type == 'text':
