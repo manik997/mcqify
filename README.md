@@ -1,6 +1,6 @@
 
 # MCQify
-[](Screenshots/Screenshot1.png)
+[Screenshots 1](Screenshots/Screenshot1.png)
 [](Screenshots/Screenshot2.png)
 [](Screenshots/Screenshot3.png)
 ## Description
