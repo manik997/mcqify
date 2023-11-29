@@ -1,8 +1,8 @@
 
 # MCQify
-[Screenshots 1](Screenshots/Screenshot1.png)
-[](Screenshots/Screenshot2.png)
-[](Screenshots/Screenshot3.png)
+![](Screenshots/Screenshot1.png)
+![](Screenshots/Screenshot2.png)
+![](Screenshots/Screenshot3.png)
 ## Description
 MCQify is a web application designed to simplify the process of creating and managing multiple-choice questions (MCQs) for educators, students, and professionals. It provides an intuitive interface for generating, organizing, and storing MCQs, making it easier to create quizzes, exams, and practice tests.
 
