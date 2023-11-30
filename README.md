@@ -27,4 +27,4 @@ To install MCQify, follow these steps:
 Once MCQify is installed, you can start creating  your MCQs by giving inputs of your choice.
 
 ## Contact
-For support or queries, please contact [Krishna Vamsi Nadh](https://www.linkedin.com/in/krishnavamsinadh/).
+For support or queries, please contact [Krishna Vamsi Nadh](https://www.linkedin.com/in/krishnavamsinadh/) / [Manik Malhotra](https://www.linkedin.com/in/manik-malhotra-160584116/)
